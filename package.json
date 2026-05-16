@@ -1,0 +1,14 @@
+{
+  "name": "greenbasket-dms",
+  "version": "1.0.0",
+  "description": "GreenBasket Distribution Management System",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "seed": "cd backend && npm run seed",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "private": true
+}

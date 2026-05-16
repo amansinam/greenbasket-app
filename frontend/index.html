@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenBasket — Distribution Management</title>
+    <link rel="icon" href="/favicon.ico?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --gb-green: #2d6a4f; --gb-green-dark: #1b4332; --gb-green-light: #52b788;
+        --gb-green-pale: #d8f3dc; --gb-green-ultra: #f0faf3;
+        --gb-amber: #e76f51; --gb-yellow: #f4a261; --gb-blue: #457b9d;
+        --gb-bg: #f5faf6; --gb-surface: #ffffff; --gb-border: #ddeae0;
+        --gb-text: #1a2e22; --gb-muted: #6b8f71; --gb-danger: #c0392b;
+        --gb-danger-pale: #fce8e6; --gb-amber-pale: #fef0e6;
+        --shadow-sm: 0 1px 3px rgba(45,106,79,0.08);
+        --shadow-md: 0 4px 12px rgba(45,106,79,0.10);
+        --radius: 10px; --radius-lg: 14px;
+        font-family: 'DM Sans', sans-serif;
+      }
+      body { background: var(--gb-bg); color: var(--gb-text); font-size: 14px; line-height: 1.5; }
+      #root { height: 100vh; display: flex; flex-direction: column; }
+      h1, h2, h3 { font-weight: 600; }
+      a { color: inherit; text-decoration: none; }
+      button { font-family: inherit; cursor: pointer; }
+      input, select, textarea { font-family: inherit; }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 5px; height: 5px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: var(--gb-border); border-radius: 10px; }
+
+      /* Utility */
+      .text-muted { color: var(--gb-muted); }
+      .text-green { color: var(--gb-green); }
+      .text-danger { color: var(--gb-danger); }
+      .text-amber { color: var(--gb-amber); }
+      .fw-600 { font-weight: 600; }
+      .fw-500 { font-weight: 500; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

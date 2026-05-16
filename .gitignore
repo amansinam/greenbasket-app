@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+*.log
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Misc
+.cache/
+.vite/
+.turbo/
+dist-ssr/
+
+# Lock files (keep package-lock.json, remove others)
+yarn.lock
+pnpm-lock.yaml
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/
